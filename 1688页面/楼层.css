@@ -1,0 +1,177 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+body {
+    min-width: 1190px;
+}
+
+li {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.active {
+    background-color: #f2f5f8;
+}
+
+.g-left {
+    float: left;
+}
+
+.g-right {
+    float: right;
+}
+
+.horizontal-center {
+    margin: 0 auto;
+    width: 1190px;
+}
+
+.body .floor-header {
+    height: 40px;
+    margin-top: 20px;
+    line-height: 40px;
+    border-bottom: 2px solid #d2d3d4;
+
+}
+
+.body .floor-header h3 {
+    font-family: "Microsoft YaHei";
+    height: 40px; /*原因？？*/
+    font-size: 20px;
+    color: #096689;
+    border-bottom: 2px solid #139dcf;
+}
+
+.body .floor-header .dot {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin: 0 10px;
+    background-color: #139dcf;
+
+}
+
+.body .floor-header .second-level {
+    font-size: 12px;
+    color: #76abbf;
+}
+
+.body .floor-header ul {
+    margin-left: 36px;
+}
+
+.body .floor-header li {
+    display: inline-block;
+    *display:inline;
+    *zoom:1;/*IE7 解决方案*/
+    width: 70px;
+    text-align: center;
+}
+
+.body .floor-header li a {
+    display: block;
+    font-family: "Microsoft YaHei";
+    font-size: 15px;
+    color: #444444;
+}
+
+.body .floor-header .more a {
+    font-size: 12px;
+    color: #096689;
+}
+
+.body .floor-show {
+    margin-top: 20px;
+}
+
+.body .floor-show div:first-child {
+    border-left: 1px solid #eaeaea;
+}
+
+.body .floor-content {
+    padding: 16px 28px 12px 28px;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+}
+
+.body .floor-content .mail-shoot {
+    height: 42px;
+    line-height: 42px;
+}
+
+.body .floor-content .mail-shoot a {
+    /*font-family: "宋体";*/
+    color: #444444;
+    font-size: 12px;
+}
+
+.body .floor-content .camp-name {
+    padding-top: 7px;
+}
+
+.body .floor-content .camp-name a {
+    color: #888888;
+    font-size: 12px;
+}

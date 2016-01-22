@@ -1,0 +1,417 @@
+/*基础服务：宋体 14px #fff;
+  图片拍摄：宋体 12px #fff;
+  网销宝服务：宋体 12px #c5c5c5;
+  左栏背景颜色： #364750；
+  宽235px;
+  高：400px;
+  边线颜色：#243139
+  每一小栏：宽235px；
+  高99 px,底部边框颜色：#243139
+  中间图片：宽：713px;
+           高：400px;
+   右侧宽232px;
+   中间和右侧的间距是10px;
+   我的店铺评测：宋体 12px #444444
+   更多>宋体 12px #888888
+   综合等级、相比同行、基于店铺的诊断，让你更有底气挑选服务、服务商数量、备案客户数。
+   1~3 Arial 12px #888888
+  */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #ff7300;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+body {
+    min-width: 1190px;
+    _width:expression((document.documentElement.clientWidth||document.body.clientWidth)>1190?"1190px":"");
+}
+
+
+li {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.active {
+    background-color: #f2f5f8;
+}
+
+.g-left {
+    float: left;
+}
+
+.g-right {
+    float: right;
+}
+.wrap{
+    background: url("images/banner-background.png") no-repeat;
+}
+.horizontal-center {
+    margin: 0 auto;
+    width: 1190px;
+    font-size: 12px;
+    color: #444;
+}
+.horizontal-center .body .banner{
+   padding-top:33px;
+}
+.body .left-nav {
+    width: 235px;
+    height: 400px;
+    background-color:#364750 ;
+}
+.body .left-nav dl{
+    padding: 22px 0 32px 0;
+    border-bottom: 1px solid #243139;
+}
+.body .left-nav .clear-bottom{
+    border-bottom: none;
+}
+.body .left-nav dt{
+    height: 33px;
+    padding-left: 16px;
+    font-size:0;
+    -webkit-text-size-adjust:none;/*去掉inline-block的间隙*/
+
+}
+.body .left-nav dt a{
+    display: inline-block;
+    padding-top: 2px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-family: "宋体";
+    font-weight: bold;
+}
+.body .left-nav dt span{
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    width: 17px;
+    height: 20px;
+    vertical-align: top;
+}
+.body .left-nav .icon-1{
+    background: url("images/icon2.png") 0 -30px no-repeat;
+}
+.body .left-nav .icon-2{
+    background: url("images/icon2.png") 0 -60px no-repeat;
+}
+.body .left-nav .icon-3{
+    background: url("images/icon2.png") 0 -90px no-repeat;
+}
+.body .left-nav .icon-4{
+    background: url("images/icon2.png") 0 -120px no-repeat;
+}
+.body .left-nav dd a{
+    padding-left: 16px;
+    padding-right: 3px;
+    color:#c5c5c5;
+
+}
+.body .left-nav dd a:hover{
+    color: #ff7300;
+}
+.body .banner-wrap{
+    width: 715px;
+    overflow: hidden;
+    position: relative;
+}
+.body .banner-wrap .banner-img{
+    position: relative;
+}
+/*.body .banner-wrap .banner-img li{*/
+    /*display: inline-block;*/
+/*}*/
+/*.body .banner-wrap .banner-content{*/
+    /*/!*position: relative;*!/*/
+    /*overflow: hidden;*/
+/*}*/
+.body .banner-wrap .banner-click{
+    position:absolute;
+    left: 598px;
+    top: 376px;
+}
+.body .banner-wrap .banner-click li{
+    display: inline-block;
+    *display:inline;
+    *zoom: 1;
+    width: 28px;
+    height: 5px;
+    background-color: #dbdbdb;
+    font-size:0;
+    -webkit-text-size-adjust:none;/*去掉inline-block的间隙*/
+    margin: 0 1px;
+}
+.body .banner-wrap .banner-click .current{
+    background-color: #ff7300;
+    width: 40px;
+}
+
+.body .store-reviews{
+    width: 230px;
+    margin-left: 10px;
+    background-color: #fff;
+    color: #888;
+}
+.body .store-reviews .review-title{
+    padding: 7px 12px 5px 10px;
+    border-bottom: 1px solid #eaeaea;
+    height: 16px;
+}
+.body .store-reviews .review-title h3{
+    height: 16px;
+
+}
+.body .store-reviews .review-title h3{
+    height: 16px;
+    line-height: 16px;
+    padding-left: 20px;
+    background: url('images/icon2.png') 0 -150px no-repeat;
+    color: #444;
+}
+.body .store-reviews .review-title a{
+    color: #888;
+}
+.body .store-reviews .review-title a:hover{
+    color: #ff7300;
+}
+.body .store-reviews .comprehensive-wrap{
+    padding: 7px 12px 8px 10px;
+    text-align: center;
+    position: relative;
+}
+
+
+.body .store-reviews .under-circle {
+    width: 70px;
+    height: 70px;
+    border: 10px solid #e7eaee;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.body .store-reviews .upper-leftcircle {
+    width: 70px;
+    height: 70px;
+    border: 10px solid #ff7300;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin: 0 auto;
+    position: absolute;
+    left: 70px;
+    top: 7px;
+    display: table; /*段落的居中*/
+}
+
+.body .store-reviews .upper-leftcircle .word-center {
+    margin: 0 auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.body .store-reviews .upper-leftcircle .score{
+    font-family: 'Microsoft YaHei';
+    font-size: 22px;
+    color: #ff7200;
+}
+.body .store-reviews .upper-rightcircle {
+    width: 70px;
+    height: 70px;
+    border: 10px solid #ff7300;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border-left: 10px solid transparent;
+    border-top: 10px solid transparent;
+    transform: rotate(133deg);
+    margin: 0 auto;
+    position: absolute;
+    left: 70px;
+    top: 7px;
+}
+/*.body .store-reviews .level-wrap {*/
+    /*text-align: center;*/
+/*}*/
+.body .store-reviews .review-level{
+    width: 30px;
+    height: 30px;
+    margin: 5px auto 9px auto;
+    background: url("images/icon2.png")  no-repeat 0 -180px ;/*0 -180px*/
+}
+.body .store-reviews .line{
+    display: inline-block;
+    *display:inline;
+    *zoom: 1;
+    width: 1px;
+    height: 28px;
+    background-color: #eaeaea;
+    margin-top: 10px;
+}
+.body .store-reviews .level-left, .body .store-reviews .level-right {
+    width: 103px;
+    height: 48px;
+    /*text-align: center;*/
+}
+.body .store-reviews .level-right .compare-percent{
+    font-size: 14px;
+    color: #fc0000;
+    margin: 12px 0;
+}
+.body .store-reviews .level-right .compare-percent span{
+    display: inline-block;
+    *display:inline;
+    *zoom: 1;
+    width: 11px;
+    height: 11px;
+    margin-left: 5px;
+    background: url("images/icon2.png") no-repeat 0 -330px;
+}
+
+.body .store-reviews .operation-wrap{
+    background-color: #f2f5f8;
+     padding: 8px 10px 11px 10px;
+}
+.body .store-reviews .operation-wrap h4{
+    height: 23px;
+    color: #444;
+    font-weight: normal;
+}
+.body .store-reviews .operation-wrap .service-operation,.body .store-reviews .operation-wrap .record-customer{
+    width: 103px;
+    height: 51px;
+    text-align: center;
+    position: relative;
+}
+.body .store-reviews .operation-wrap .service-number,.body .store-reviews .operation-wrap .customer-number{
+    width: 103px;
+    height: 39px;
+    padding-top:8px;
+    text-align: center;
+    font-family: 'Microsoft YaHei'; 
+    font-size: 22px;
+    color:#ff7300;
+}
+.body .store-reviews .operation-wrap .service-back{
+    display: inline-block;
+    *display:inline;
+    *zoom: 1;
+    width: 20px;
+    height:20px;
+    background: url("images/icon2.png") no-repeat 0 -210px;
+}
+.body .store-reviews .operation-wrap .percent-wrap {
+    margin: 0 auto;
+    width: 197px;
+    height: 18px;
+}
+
+.body .store-reviews .operation-wrap .percent-left {
+    display: inline-block;
+    *display:inline;
+    *zoom: 1;
+    width: 69px;
+
+}
+
+.body .store-reviews .operation-wrap .percent-center {
+    width: 97px;
+    height: 10px;
+    display: inline-block;
+    *display:inline;
+    *zoom: 1;
+
+}
+
+.body .store-reviews .operation-wrap .percent-right {
+    color: #ff7300;
+}
+
+.body .store-reviews .operation-wrap .percent-number {
+    display: inline-block;
+    *display:inline;
+    *zoom: 1;
+    height: 10px;
+    background-color: #ff9d2a;
+}
+
+.body .store-reviews .operation-wrap .service-apply a{
+    display: block;
+    height: 31px;
+    line-height: 31px;
+    margin-top:9px;
+    background-color: #ff7300;
+    text-align: center;
+    -webkit-box-shadow: 0 3px 4px   #f65700;
+    -moz-box-shadow:  0 3px 4px   #f65700;
+    box-shadow:  0 3px 4px   #f65700;
+}
+.body .store-reviews .operation-wrap .service-apply a:hover{
+    color: #000;
+}

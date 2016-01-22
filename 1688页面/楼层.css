@@ -30,8 +30,13 @@ a {
     vertical-align: baseline;
     background: transparent;
     text-decoration: none;
+    color: #444;
 }
+a:hover{
+    text-decoration: underline;
+    color: #ff7300;
 
+}
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -88,16 +93,16 @@ li {
 }
 
 .body .floor-header {
-    height: 40px;
+    height: 35px;
     margin-top: 20px;
-    line-height: 40px;
+    line-height: 35px;
     border-bottom: 2px solid #d2d3d4;
-
+   font-size: 12px;
 }
 
 .body .floor-header h3 {
     font-family: "Microsoft YaHei";
-    height: 40px; /*原因？？*/
+    height: 35px; /*原因？？*/
     font-size: 20px;
     color: #096689;
     border-bottom: 2px solid #139dcf;
@@ -123,8 +128,8 @@ li {
 
 .body .floor-header li {
     display: inline-block;
-    *display:inline;
-    *zoom:1;/*IE7 解决方案*/
+    *display: inline;
+    *zoom: 1; /*IE7 解决方案*/
     width: 70px;
     text-align: center;
 }
@@ -133,45 +138,51 @@ li {
     display: block;
     font-family: "Microsoft YaHei";
     font-size: 15px;
-    color: #444444;
+    /*color: #444;*/
 }
+.body .floor-header li a:hover{
+    text-decoration: none;
+    /*color: #444;*/
+}
+.body .floor-header .more a{
+    /*font-size: 12px;*/
 
-.body .floor-header .more a {
-    font-size: 12px;
     color: #096689;
 }
-
+.body .floor-header .more a:hover {
+    text-decoration: none;
+    color: #ff7300;
+}
 .body .floor-show {
     margin-top: 20px;
 }
 
-.body .floor-show div:first-child {
-    border-left: 1px solid #eaeaea;
-}
-
 .body .floor-content {
-    padding: 16px 28px 12px 28px;
-    border-top: 1px solid #eaeaea;
-    border-bottom: 1px solid #eaeaea;
-    border-right: 1px solid #eaeaea;
+    padding: 22px 28px;
+    border: 1px solid #eaeaea;
+    margin-left: -1px;
+    /*border-width: 1px 1px 1px 0;*/
+    font-size: 12px;
+    width: 240px;/*IE 6 下问题*/
 }
 
 .body .floor-content .mail-shoot {
-    height: 42px;
-    line-height: 42px;
+    height: 40px;
+    line-height: 40px;
+
 }
 
 .body .floor-content .mail-shoot a {
     /*font-family: "宋体";*/
-    color: #444444;
-    font-size: 12px;
-}
-
-.body .floor-content .camp-name {
-    padding-top: 7px;
+    /*color: #444;*/
+    /*font-size: 12px;*/
 }
 
 .body .floor-content .camp-name a {
-    color: #888888;
-    font-size: 12px;
+    color: #888;
+    /*font-size: 12px;*/
+}
+.body .floor-content .camp-name a:hover{
+    text-decoration: underline;
+    color: #ff7300;
 }

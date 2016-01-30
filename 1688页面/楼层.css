@@ -12,14 +12,11 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    outline: 0;
+    /*outline: 0;*/
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-}
-
-body {
-    line-height: 1;
+    outline: 1px solid red;
 }
 
 a {
@@ -32,11 +29,13 @@ a {
     text-decoration: none;
     color: #444;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
     color: #ff7300;
 
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -55,8 +54,15 @@ input, select {
     vertical-align: middle;
 }
 
+ul, li, h1, h2, h3, h4, a, dl, dt, dd, span {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 body {
     min-width: 1190px;
+    font: 12px/1.5 Tahoma, Arial, \5b8b\4f53, sans-serif;
+    color: #444;
 }
 
 li {
@@ -97,7 +103,7 @@ li {
     margin-top: 20px;
     line-height: 35px;
     border-bottom: 2px solid #d2d3d4;
-   font-size: 12px;
+
 }
 
 .body .floor-header h3 {
@@ -110,6 +116,9 @@ li {
 
 .body .floor-header .dot {
     display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    overflow: hidden; /*ie 6 下高度17px*/
     width: 3px;
     height: 3px;
     margin: 0 10px;
@@ -124,6 +133,7 @@ li {
 
 .body .floor-header ul {
     margin-left: 36px;
+    display: inline;
 }
 
 .body .floor-header li {
@@ -132,6 +142,7 @@ li {
     *zoom: 1; /*IE7 解决方案*/
     width: 70px;
     text-align: center;
+    vertical-align: bottom; /*加overflow:hidden 之后造成baseline移动*/
 }
 
 .body .floor-header li a {
@@ -140,49 +151,57 @@ li {
     font-size: 15px;
     /*color: #444;*/
 }
-.body .floor-header li a:hover{
+
+.body .floor-header li a:hover {
     text-decoration: none;
     /*color: #444;*/
 }
-.body .floor-header .more a{
-    /*font-size: 12px;*/
 
+.body .floor-header .more a {
+    /*font-size: 12px;*/
     color: #096689;
 }
+
 .body .floor-header .more a:hover {
     text-decoration: none;
     color: #ff7300;
 }
+
 .body .floor-show {
     margin-top: 20px;
 }
 
 .body .floor-content {
-    padding: 22px 28px;
-    border: 1px solid #eaeaea;
-    margin-left: -1px;
-    /*border-width: 1px 1px 1px 0;*/
+    padding: 19px 28px;
+    border: solid #eaeaea;
+    /*margin-left: -1px;*/
+    border-width: 1px 1px 1px 0;
     font-size: 12px;
-    width: 240px;/*IE 6 下问题*/
+    width: 240px; /*IE 6 下问题*/
+}
+
+.body .floor-content div:first-child {
+    border-left: 1px solid #eaeaea;
 }
 
 .body .floor-content .mail-shoot {
-    height: 40px;
-    line-height: 40px;
+    height: 37px;
+    line-height: 37px;
 
 }
 
-.body .floor-content .mail-shoot a {
-    /*font-family: "宋体";*/
-    /*color: #444;*/
-    /*font-size: 12px;*/
-}
+/*.body .floor-content .mail-shoot a {*/
+/*/!*font-family: "宋体";*!/*/
+/*/!*color: #444;*!/*/
+/*/!*font-size: 12px;*!/*/
+/*}*/
 
 .body .floor-content .camp-name a {
     color: #888;
     /*font-size: 12px;*/
 }
-.body .floor-content .camp-name a:hover{
+
+.body .floor-content .camp-name a:hover {
     text-decoration: underline;
     color: #ff7300;
 }

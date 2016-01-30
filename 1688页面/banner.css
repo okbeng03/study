@@ -14,11 +14,11 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    /*outline: 0;*/
+    outline: 0;
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 
 a {
@@ -176,7 +176,6 @@ li {
     padding-left: 16px;
     padding-right: 3px;
     color: #c5c5c5;
-
 }
 
 .banner .left-nav .category li a:hover {
@@ -415,7 +414,6 @@ li {
     *display: inline;
     *zoom: 1;
     width: 78px;
-
 }
 
 .banner .store-reviews .operation-wrap .percent-center {

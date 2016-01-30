@@ -12,11 +12,11 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    /*outline: 0;*/
+    outline: 0;
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 
 a {
@@ -103,7 +103,6 @@ li {
     margin-top: 20px;
     line-height: 35px;
     border-bottom: 2px solid #d2d3d4;
-
 }
 
 .body .floor-header h3 {
@@ -123,7 +122,6 @@ li {
     height: 3px;
     margin: 0 10px;
     background-color: #139dcf;
-
 }
 
 .body .floor-header .second-level {
@@ -187,7 +185,6 @@ li {
 .body .floor-content .mail-shoot {
     height: 37px;
     line-height: 37px;
-
 }
 
 /*.body .floor-content .mail-shoot a {*/

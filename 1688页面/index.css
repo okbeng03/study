@@ -222,12 +222,13 @@ a {
 
 #body .comprehensive-score {
     height: 70px;
+    zoom: 1;
 }
 
 #body .upper-rightcircle {
     width: 50px;
     height: 50px;
-    border: 10px solid #ff3714;
+    border: 10px solid #ff7300;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
@@ -237,6 +238,8 @@ a {
     margin: 0 auto;
     position: relative;
     top: -140px;
+    /*display: inline;*/
+    /*zoom: 1;*/
 }
 
 #body .score-wrap {
